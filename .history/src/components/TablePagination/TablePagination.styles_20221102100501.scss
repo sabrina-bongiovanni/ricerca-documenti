@@ -1,0 +1,38 @@
+@import '../../style-variables/variables.scss';
+nav {
+  display: flex;
+  align-items: center;
+  margin: 0px 16px;
+  .pagination {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+
+    // .page-item {
+    //   .page-link {
+    //     margin: 0px;
+    //     font-size: 16px;
+    //     line-height: 24px;
+    //     padding: 12px 19.5px;
+    //     cursor: pointer;
+    //   }
+
+    // svg {
+    //   cursor: pointer;
+    // }
+
+    // .nav-icon {
+    //   color: red;
+    // }
+  }
+
+  // .page-item-active {
+  //   border: 1px solid #0073e6;
+  //   border-radius: 4px;
+
+  //   .page-link-active {
+  //     color: #0073e6;
+  //   }
+  // }
+  // }
+}

@@ -1,0 +1,31 @@
+@import '../../style-variables/variables.scss';
+
+.table {
+  box-shadow: 0px 4px 20px 0px rgba(0, 0, 0, 0.1);
+  border-spacing: 10px;
+  color: #d6dce3 !important;
+
+  tr,
+  td,
+  th {
+    font-size: 16px;
+    line-height: 24px;
+    color: #272727;
+
+    p {
+      margin: 10px auto;
+    }
+
+    button {
+      margin: 10px auto;
+      background-color: #0066cc;
+      border-radius: 4px;
+      border: none;
+      color: $tertiary-color;
+      font-size: 13px;
+      font-weight: 700;
+      line-height: 20px;
+      padding: 8px 24px;
+    }
+  }
+}

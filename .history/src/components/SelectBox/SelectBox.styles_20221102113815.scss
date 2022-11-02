@@ -1,0 +1,75 @@
+@import '../../style-variables/variables.scss';
+
+@mixin select-box() {
+  color: $tertiary-color;
+  font-size: 16px;
+  line-height: 21px;
+  min-height: auto;
+}
+
+@mixin value-container() {
+  height: auto;
+  font-size: inherit;
+  line-height: inherit;
+  justify-content: center;
+}
+
+.select-menu-container {
+  flex-basis: 80%;
+  display: flex;
+
+  .bootstrap-select-wrapper {
+    flex-basis: 27%;
+
+    .css-sjawnh-control {
+      background-color: transparent;
+      border-bottom: none;
+
+      .css-zsohrp-placeholder {
+        @include select-box();
+      }
+
+      .css-b8ldur-Input {
+        color: $tertiary-color;
+      }
+
+      .css-a4e4qq-indicatorContainer {
+        fill: $tertiary-color;
+        padding: 8px 0px;
+      }
+
+      .css-n8k1z3-ValueContainer {
+        @include value-container();
+      }
+    }
+
+    .css-duooqy-control {
+      background-color: transparent;
+      border-bottom: none;
+      @include select-box();
+
+      .css-n8k1z3-ValueContainer {
+        @include value-container();
+      }
+
+      input:focus:not(.focus--mouse) {
+        border-color: none !important;
+        box-shadow: none !important;
+      }
+
+      .css-77uk6w-indicatorContainer {
+        fill: $tertiary-color;
+        padding: 8px 0px;
+      }
+
+      .css-zsohrp-placeholder {
+        color: $tertiary-color;
+        text-align: center;
+      }
+
+      .css-zsohrp-placeholder:focus:not(.focus--mouse) {
+        color: transparent;
+      }
+    }
+  }
+}
